@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$multidimensional = array (
+  $ar1 = array(25,22,18),
+  $ar2 = array(10,15,13),
+  $ar3 = array(24,5,2),
+  $ar4 = array(80,17,15)
+);
+
+$union = array_merge($multidimensional[0],$multidimensional[1],$multidimensional[2],$multidimensional[3]);
+
+rsort($union);
+
+print_r($union[1]);
+?>
+
+</body>
+</html>
